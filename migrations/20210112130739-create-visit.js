@@ -11,10 +11,18 @@ module.exports = {
       countryCode: {
         type: Sequelize.STRING,
         allowNull: false,
+        references: {
+          model: "countries",
+          key: "code",
+        },
       },
       userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: "users",
+          key: "id",
+        },
       },
       createdAt: {
         allowNull: false,
