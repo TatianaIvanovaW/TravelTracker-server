@@ -1,11 +1,8 @@
 const resolvers = {
   Query: {
-    async getAllCountries(root, args, { models }) {
-      return models.country.findAll();
-    },
-    async getAllVisits(root, args, { models }) {
-      return models.visit.findAll();
-    },
+    countries: (parent, args, { models }, info) => models.country.findAll(),
+    users: (parent, args, { models }, info) => models.user.findAll(),
+    visits: (parent, args, { models }, info) => models.visit.findAll(),
   },
 };
 
