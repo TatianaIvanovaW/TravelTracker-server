@@ -21,8 +21,12 @@ app.use("/", authRouter);
 
 const server = new ApolloServer({ typeDefs, resolvers, context: { models } });
 
+app.get("/test", async (req, res, next) => {
+  res.json("user.toDoLists");
+});
+
 server.applyMiddleware({ app });
-app.listen(4000, () =>
+app.listen(PORT, () =>
   console.log(
     `🚀 Server ready at http://localhost:ocalhost:4000${server.graphqlPath}`
   )
