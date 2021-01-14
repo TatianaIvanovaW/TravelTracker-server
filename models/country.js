@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       country.belongsToMany(models.user, {
         through: "visit",
         foreignKey: "countryId",
+        sourceKey: "code",
       });
     }
   }

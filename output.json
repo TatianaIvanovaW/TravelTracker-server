@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "testuser",
+        "email": "test@test.com",
+        "password": "$2b$10$KTV6VszHB4PZWlTUtluFUeByV.5dilVtCWyogElrZ7q34OSFmeAZW",
+        "isAdmin": false,
+        "isBlocked": false,
+        "createdAt": "2021-01-13T15:16:26.059Z",
+        "updatedAt": "2021-01-13T15:16:26.059Z",
+        "countries": [
+            {
+                "id": 186,
+                "name": "Russian Federation",
+                "code": "RUS",
+                "createdAt": "2021-01-13T15:16:26.259Z",
+                "updatedAt": "2021-01-13T15:16:26.259Z",
+                "visit": {
+                    "countryId": "RUS",
+                    "userId": 1,
+                    "createdAt": "2021-01-13T15:16:26.466Z",
+                    "updatedAt": "2021-01-13T15:16:26.466Z"
+                }
+            },
+            {
+                "id": 4,
+                "name": "Algeria",
+                "code": "DZA",
+                "createdAt": "2021-01-13T15:16:26.258Z",
+                "updatedAt": "2021-01-13T15:16:26.258Z",
+                "visit": {
+                    "countryId": "DZA",
+                    "userId": 1,
+                    "createdAt": "2021-01-13T15:16:26.466Z",
+                    "updatedAt": "2021-01-13T15:16:26.466Z"
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "lucy",
+        "email": "lu@cy",
+        "password": "$2b$10$RXpb4Y43HedRzCpgbn1HOuMUiOWLX0kF11cIREPDxmvee8BbIKBp.",
+        "isAdmin": false,
+        "isBlocked": true,
+        "createdAt": "2021-01-13T15:16:26.199Z",
+        "updatedAt": "2021-01-13T15:16:26.199Z",
+        "countries": [
+            {
+                "id": 4,
+                "name": "Algeria",
+                "code": "DZA",
+                "createdAt": "2021-01-13T15:16:26.258Z",
+                "updatedAt": "2021-01-13T15:16:26.258Z",
+                "visit": {
+                    "countryId": "DZA",
+                    "userId": 3,
+                    "createdAt": "2021-01-13T15:16:26.466Z",
+                    "updatedAt": "2021-01-13T15:16:26.466Z"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "tati",
+        "email": "t@t.com",
+        "password": "$2b$10$ow58kQzdzQKvIhefBsUubuffWVMjmS28bqXlK/Gk5HK0WO9DybtFu",
+        "isAdmin": false,
+        "isBlocked": false,
+        "createdAt": "2021-01-13T15:16:26.129Z",
+        "updatedAt": "2021-01-13T15:16:26.129Z",
+        "countries": [
+            {
+                "id": 186,
+                "name": "Russian Federation",
+                "code": "RUS",
+                "createdAt": "2021-01-13T15:16:26.259Z",
+                "updatedAt": "2021-01-13T15:16:26.259Z",
+                "visit": {
+                    "countryId": "RUS",
+                    "userId": 2,
+                    "createdAt": "2021-01-13T15:16:26.466Z",
+                    "updatedAt": "2021-01-13T15:16:26.466Z"
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Tatiana",
+        "email": "ivanova.tatiana.w@gmail.com",
+        "password": "$2b$10$4rY8ApZz5uPqp9K0TCHTB.uAuRjVKhnN1Ca//CVqZZa0gtS9Q8TS.",
+        "isAdmin": null,
+        "isBlocked": null,
+        "createdAt": "2021-01-14T08:20:19.157Z",
+        "updatedAt": "2021-01-14T08:20:19.157Z",
+        "countries": []
+    }
+]
