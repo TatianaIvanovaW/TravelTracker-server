@@ -9,7 +9,7 @@ const corsMiddleWare = require("cors");
 const authRouter = require("./routers/auth");
 
 const app = express();
-const port = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(loggerMiddleWare("dev"));
 
@@ -22,8 +22,8 @@ app.use("/", authRouter);
 const server = new ApolloServer({ typeDefs, resolvers, context: { models } });
 
 server.applyMiddleware({ app });
-app.listen({ port }, () =>
+app.listen(4000, () =>
   console.log(
-    `🚀 Server ready at http://localhost:ocalhost:${port}${server.graphqlPath}`
+    `🚀 Server ready at http://localhost:ocalhost:4000${server.graphqlPath}`
   )
 );
