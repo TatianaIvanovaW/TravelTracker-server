@@ -7,6 +7,7 @@ const loggerMiddleWare = require("morgan");
 const corsMiddleWare = require("cors");
 
 const authRouter = require("./routers/auth");
+const addCountry = require("./routers/add");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -18,6 +19,7 @@ app.use(bodyParserMiddleWare);
 
 app.use(corsMiddleWare());
 app.use("/", authRouter);
+app.use("/", addCountry);
 
 const server = new ApolloServer({ typeDefs, resolvers, context: { models } });
 
