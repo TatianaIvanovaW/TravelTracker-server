@@ -34,6 +34,7 @@ const rootType = gql`
     visits: [Visit!]!
     userVisits: [UserV]
     countryUsers: [CountryV]
+    user(id: Int): UserV
   }
 `;
 

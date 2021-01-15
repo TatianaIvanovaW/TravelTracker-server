@@ -9,6 +9,12 @@ const resolvers = {
     countries: (parent, args, { models }, info) => models.country.findAll(),
     users: (parent, args, { models }, info) => models.user.findAll(),
     visits: (parent, args, { models }, info) => models.visit.findAll(),
+    user: (parent, { id }, { models }, info) =>
+      models.user.findOne({
+        where: { id },
+
+        include: [models.country],
+      }),
     userVisits: (parent, args, { models }, info) => {
       return models.user.findAll({
         include: [models.country],
