@@ -6,25 +6,25 @@ module.exports = {
       "visits",
       [
         {
-          countryCode: "RUS",
+          countryId: "RUS",
           userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          countryCode: "DZA",
+          countryId: "DZA",
           userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          countryCode: "DZA",
+          countryId: "DZA",
           userId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          countryCode: "RUS",
+          countryId: "RUS",
           userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),

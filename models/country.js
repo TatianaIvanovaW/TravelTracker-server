@@ -10,7 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       country.belongsToMany(models.user, {
         through: "visit",
-        foreignKey: "countryCode",
+        foreignKey: "countryId",
+        sourceKey: "code",
       });
     }
   }
