@@ -1,10 +1,4 @@
 const resolvers = {
-  // User: {
-  //   countries: (parent, args, context, info) => {
-  //     console.log(parent);
-  //     parent.getCountries();
-  //   },
-  // },
   Query: {
     countries: (parent, args, { models }, info) => models.country.findAll(),
     users: (parent, args, { models }, info) => models.user.findAll(),
@@ -26,5 +20,17 @@ const resolvers = {
       });
     },
   },
+  // Mutation: {
+  //   // 2
+  //   visit: (parent, args, { models }) => {
+  //     const visit = {
+  //       id: parseInt(Math.random() * 100),
+  //       userId: args.userId,
+  //       countryId: args.countryId,
+  //     };
+  //     models.visit.findAll().push(visit);
+  //     return visit;
+  //   },
+  // },
 };
 module.exports = resolvers;

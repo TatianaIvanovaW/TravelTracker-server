@@ -12,8 +12,9 @@ const rootType = gql`
   }
 
   type Visit {
+    id: Int!
     userId: Int!
-    countryId: String!
+    countryId: String
   }
 
   type UserV {
@@ -39,3 +40,6 @@ const rootType = gql`
 `;
 
 module.exports = [rootType];
+// type Mutation {
+//   visit(id: Int, userId: Int, countryId: String): Visit
+// }
