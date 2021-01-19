@@ -16,6 +16,7 @@ module.exports = {
           key: "code",
         },
       },
+
       userId: {
         type: Sequelize.INTEGER,
         allowNull: false,

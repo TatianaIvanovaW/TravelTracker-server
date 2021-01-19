@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "hmmzagsz",
-    "password": "35AP1zA5acnD3uIwcovfEZq85I7FnYBR",
-    "database": "hmmzagsz",
-    "host": "hattie.db.elephantsql.com",
+    "username": "uqxjgtvablwjpw",
+    "password": "7d537b309b30de3f4cf01e1b7f55fa7b6db957e0f82cb115958c61d499637a93",
+    "database": "ddg2f2vf54ap0e",
+    "host": "ec2-34-253-148-186.eu-west-1.compute.amazonaws.com",
     "dialect": "postgresql"
   },
   "test": {
@@ -14,10 +14,6 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "use_env_variable": "DATABASE_URL"
   }
 }
