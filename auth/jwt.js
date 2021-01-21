@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const { jwtSecret } = require("../config/secrets");
 
 function toJWT(data) {
+  console.log(`secret`, jwtSecret);
   return jwt.sign(data, jwtSecret, { expiresIn: "2h" });
 }
 
