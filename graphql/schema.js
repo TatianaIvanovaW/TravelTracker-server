@@ -6,6 +6,7 @@ const rootType = gql`
     name: String
   }
   type Country {
+    id: Int
     code: String!
     name: String!
     visit: Visit
@@ -24,6 +25,7 @@ const rootType = gql`
   }
 
   type CountryV {
+    id: Int
     name: String
     code: String
     users: [User]

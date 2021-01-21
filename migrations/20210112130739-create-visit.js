@@ -13,7 +13,7 @@ module.exports = {
         allowNull: false,
         references: {
           model: "countries",
-          key: "code",
+          key: "id",
         },
       },
 
