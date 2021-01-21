@@ -27,6 +27,10 @@ app.get("/test", async (req, res, next) => {
   res.json("user.toDoLists");
 });
 
+app.get("/signup", async (req, res, next) => {
+  res.json("signup page");
+});
+
 server.applyMiddleware({ app });
 app.listen(PORT, () =>
   console.log(
