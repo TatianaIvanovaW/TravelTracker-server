@@ -133,7 +133,7 @@ module.exports = {
         },
         {
           name: "Belgium",
-          code: " BEL",
+          code: "BEL",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
