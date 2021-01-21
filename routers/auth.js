@@ -53,6 +53,7 @@ router.post("/signup", async (req, res) => {
 
     res.status(201).json({ token, ...newUser.dataValues });
   } catch (error) {
+    console.log(`error jfdgdkfg`, error);
     if (error.name === "SequelizeUniqueConstraintError") {
       return res
         .status(400)
