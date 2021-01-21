@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       countryId: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         references: {
           model: "countries",

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   visit.init(
     {
-      countryId: DataTypes.STRING,
+      countryId: DataTypes.INTEGER,
       userId: DataTypes.INTEGER,
     },
     {
