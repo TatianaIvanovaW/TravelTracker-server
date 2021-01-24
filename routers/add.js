@@ -36,11 +36,12 @@ router.get("/user", authMiddleWare, async (req, res, next) => {
   }
 });
 
-router.delete("/visit/:id", async (req, res, next) => {
+router.delete("/visit/:id", authMiddleWare, async (req, res, next) => {
   console.log(`what is that`, req.body);
+  console.log(`user id`, req.user.id);
   const id = req.params.id;
   try {
-    await Visit.destroy({ where: { id } });
+    await Visit.destroy({ where: { countryID: id, userId: req.params.id } });
 
     res.send("visit deleted");
   } catch (e) {
