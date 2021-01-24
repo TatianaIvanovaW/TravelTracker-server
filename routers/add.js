@@ -36,4 +36,17 @@ router.get("/user", authMiddleWare, async (req, res, next) => {
   }
 });
 
+router.delete("/visit/:id", async (req, res, next) => {
+  console.log(`what is that`, req.body);
+  const id = req.params.id;
+  try {
+    await Visit.destroy({ where: { id } });
+
+    res.send("visit deleted");
+  } catch (e) {
+    console.log(e.message);
+    next(e);
+  }
+});
+
 module.exports = router;
