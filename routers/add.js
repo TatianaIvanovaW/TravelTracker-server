@@ -40,7 +40,7 @@ router.delete("/visit/:id", authMiddleWare, async (req, res, next) => {
   console.log(`user id`, req.user.id);
   const id = req.params.id;
   try {
-    await Visit.destroy({ where: { countryID: id, userId: req.user.id } });
+    await Visit.destroy({ where: { countryId: id, userId: req.user.id } });
 
     res.send("visit deleted");
   } catch (e) {
