@@ -6,8 +6,7 @@ const resolvers = {
     user: (parent, { id }, { models }, info) =>
       models.user.findOne({
         where: { id },
-
-        include: [models.visit],
+        include: [models.country],
       }),
     userVisits: (parent, args, { models }, info) => {
       return models.user.findAll({

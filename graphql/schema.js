@@ -21,7 +21,7 @@ const rootType = gql`
   type UserV {
     id: Int
     name: String
-    visits: [Visit]
+    countries: [Country]
   }
 
   type CountryV {
