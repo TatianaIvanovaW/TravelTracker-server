@@ -15,13 +15,13 @@ const rootType = gql`
   type Visit {
     id: Int!
     userId: Int!
-    countryId: String
+    countryId: Int!
   }
 
   type UserV {
     id: Int
     name: String
-    countries: [Country]
+    visits: [Visit]
   }
 
   type CountryV {

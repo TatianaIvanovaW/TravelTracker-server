@@ -7,7 +7,7 @@ const resolvers = {
       models.user.findOne({
         where: { id },
 
-        include: [models.country],
+        include: [models.visit],
       }),
     userVisits: (parent, args, { models }, info) => {
       return models.user.findAll({
